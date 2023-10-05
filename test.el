@@ -1,0 +1,10 @@
+(init)
+(save-db "cd.db")
+*db*
+(add-record (make-cd "Born To Run" "Bruce Springsteen" 10 t))
+(add-record (make-cd "The River" "Bruce Springsteen" 10 t))
+(add-record (make-cd "Nebraska" "Bruce Springsteen" 10 t))
+(add-record (make-cd "Human Touch" "Bruce Springsteen" 10 nil))
+(save-db "cd.db")
+(setq *db* ())
+(load-db "cd.db")
